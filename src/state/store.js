@@ -1,6 +1,5 @@
-//create store here
-const initialState = {
-  allRecipes: [],
-  favoriteRecipes: [],
-  searchTerm: "",
-};
+//create store here/ you must combineReducers
+import {createStore} from redux;
+import recipesReducer from "./reducers/recipesReducer";
+
+const store = createStore(recipesReducer)
