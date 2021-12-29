@@ -8,6 +8,7 @@ export default function Recipe({ recipe, children }) {
         <h2 className="recipe-name">{recipe.name}</h2>
         <div className="image-container">
           <img src={recipe.img} alt="delicacy" className="recipe-image" />
+          {console.log("image from Recipe: ", recipe.img)}
         </div>
       </span>
       {console.log("children from allRecipes-> Recipe", children)}

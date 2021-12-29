@@ -5,7 +5,7 @@ import SearchTerm from "../features/searchTerm/SearchTerm";
 import { getFilteredRecipes } from "../utilities";
 import "./App.css";
 
-function App(props) {
+export default function App(props) {
   const { state, dispatch } = props;
   const visibleAllRecipes = getFilteredRecipes(
     state.allRecipes,
@@ -34,5 +34,3 @@ function App(props) {
     </main>
   );
 }
-
-export default App;

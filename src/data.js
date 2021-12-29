@@ -2,17 +2,17 @@ const allRecipesData = [
   {
     id: 0,
     name: "biscuit",
-    img: "/home/temi/portfolios/recipe-app/src/img/biscuit.jpeg",
+    img: "https://source.unsplash.com/random",
   },
   {
     id: 1,
     name: "cake",
-    img: "/home/temi/portfolios/recipe-app/src/img/cake.jpeg",
+    img: "https://source.unsplash.com/random",
   },
   {
     id: 2,
     name: "juice",
-    img: "/home/temi/portfolios/recipe-app/src/img/juice.jpeg",
+    img: "https://source.unsplash.com/random",
   },
   {
     id: 3,

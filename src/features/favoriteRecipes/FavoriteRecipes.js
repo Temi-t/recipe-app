@@ -13,11 +13,14 @@ export default function FavoriteRecipes({ favoriteRecipes, dispatch }) {
       <div>
         {favoriteRecipes?.map((favorite, i) => (
           <Recipe key={`favorite_ ` + i} recipe={favorite}>
-            <FavoriteButton onClick={() => handleRecipeRemoval(favorite)}>
+            <FavoriteButton
+              onClickHandler={() => handleRecipeRemoval(favorite)}
+            >
               Remove <FcDislike />
             </FavoriteButton>
           </Recipe>
         ))}
+        <hr />
       </div>
     </div>
   );

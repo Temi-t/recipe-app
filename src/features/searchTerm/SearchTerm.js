@@ -12,8 +12,8 @@ export default function SearchTerm({ searchTerm, dispatch }) {
     dispatch(clearSearchTerm());
   };
   return (
-    <div>
-      <FcSearch />
+    <div className="search-container">
+      <FcSearch className="search-icon" />
       <input
         className="search"
         type="text"
@@ -23,7 +23,7 @@ export default function SearchTerm({ searchTerm, dispatch }) {
       />
       {searchTerm.length > 0 && (
         <button className="clear-btn" type="button" onClick={handleClearTerm}>
-          <MdClear />
+          <MdClear className="clear-icon" />
         </button>
       )}
     </div>

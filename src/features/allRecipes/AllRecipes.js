@@ -4,6 +4,7 @@ import { addRecipe } from "../favoriteRecipes/favoriteRecipesSlice";
 
 import FavoriteButton from "../../components/FavoriteButton";
 import Recipe from "../../components/Recipe";
+import { FcLike } from "react-icons/fc";
 
 export default function AllRecipes({ allRecipes, dispatch }) {
   const onFirstRender = () => {
@@ -19,7 +20,7 @@ export default function AllRecipes({ allRecipes, dispatch }) {
       {allRecipes.map((recipe, i) => (
         <Recipe recipe={recipe} key={recipe.id}>
           <FavoriteButton onClickHandler={() => handleAddRecipe(recipe)}>
-            Add to Favorites
+            Add to Favorites <FcLike />
           </FavoriteButton>
         </Recipe>
       ))}
