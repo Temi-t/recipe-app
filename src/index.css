@@ -56,6 +56,38 @@ code {
   color: #8a8e9d;
   text-align: left;
 }
+.clear-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 3px;
+  border: 0;
+  background: none;
+  color: #141c3a;
+  margin: 0;
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.header {
+}
+.recipe {
+  padding: 10;
+  border-radius: 6px;
+  border: solid 1px #141c3a;
+  background-color: orange;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.recipe:hover,
+.recipe:focus,
+.recipe:focus-within {
+  background: #141c3a;
+  color: #fff;
+}
 
 img {
   height: 250px;
